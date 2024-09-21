@@ -1,0 +1,23 @@
+{
+  "name": "15-project-03-discord-bot",
+  "version": "1.0.0",
+  "description": "Nodejs Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komalpharate/Discord-Bot.git"
+  },
+  "author": "komal pharate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komalpharate/Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/komalpharate/Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5"
+  }
+}

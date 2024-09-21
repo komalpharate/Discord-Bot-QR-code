@@ -1,5 +1,6 @@
 require('dotenv').config();
-const botToken = process.env.BOT_TOKEN;
+const BOT_TOKEN = process.env.BOT_TOKEN;
+require('./command');
 
 const { Client, GatewayIntentBits}= require("discord.js");
 const client = new Client({
@@ -18,7 +19,18 @@ client.on("messageCreate", (message)=>{
     message.reply({content: "Hi from Bot"})
 });
 
-client.login(botToken);
+client.on('interactionCreate', async (interaction) => {
+    if (!interaction.isCommand()) return;
 
-const { REST, Routes } = require('discord.js');
+    const { commandName } = interaction;
+    console.log(commandName);
+
+    if (commandName === 'hello') {
+        await interaction.reply('Namaste from bot!');
+    }
+    //you can add any other command handlers here
+});
+
+client.login(BOT_TOKEN);
+
 

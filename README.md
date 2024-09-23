@@ -4,7 +4,7 @@
 1. create account on discord website.
 2. create server.
 3. create an application on server.
-4. Set a bot with required permission. 
+4. Set a bot with required permission and add TOKEN, CLIENT_ID in .env file
 5. Use `/qrcode input string_anything_to_be_converted_to_QRcode` 0r
    
  `/qrcode input string_anything_to_be_converted_to_QRcode width _integer_ height _integer_ color _color_code_`
